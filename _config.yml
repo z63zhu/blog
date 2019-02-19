@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Zachary's blog
-subtitle: full-stack developer
-description: 
+title: Hexo
+subtitle:
+description:
 keywords:
-author: Zizhong Zhu
+author: John Doe
 language:
 timezone:
 
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hueman
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
