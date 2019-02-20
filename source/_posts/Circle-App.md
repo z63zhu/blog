@@ -4,24 +4,31 @@ date: 2019-02-19 12:24:19
 tags:
 ---
 An andriod App for CS446's project (2017/4 - 2017/8)
+Applink: https://446daydayup.github.io/
 Github: https://github.com/446DayDayUp/CircleApp
 
 ![Logo](Logo.png)
-## An Overview of software architecture and language used
-Client side mobile app is built in React-Native with JavaScript which is component-based framework and it makes building hybrid mobile app easier. Because limitation of **JavaScript** and **React-Native** framework, some native modules are implemented with Java.
-	Server is built in Node.js with Javascript which is an event-driven, non-blocking back-end framework to process HTTP request, establish socket and communicate with **Mongo Database** and **Google Cloud Storage**.
+Our project is to build an app that allows users to meet and chat with people near them. The app allows user to create chat rooms with tags. Other users are able to search and enter those chat rooms based on name or tags. Within a chat room, users can interact with other uses by sending text messages, voice messages, pictures, current location, or start a game with other people in the chat room.
 
+The app allows users to chat with strangers and make friends.
+The app allows users to find interesting chat rooms by tags.
+All chat rooms are created based on location. Only nearby users are able to enter the room.
+All users are totally anonymous to each other.
 
+## <font color="#0D2989"> ** Functional Properties ** </font>
+Users are able to log in with a username and profile picture.
+Users can create chat room with a name, optional tags, and range specifying the visible range of this chat room.
+Users can view nearby chat rooms, join visible chat rooms, and quit joined chat rooms.
+Users can search chat rooms based on name and tags.
+Users are allowed to send different types of messages including text, location, image, voice and possibly video message.
+Users can play mini games in the chat room and share their score with others.
+User can blacklist other users and their message will no longer be displayed.
 
-## <font color="#0D2989"> ** Functions ** </font>
-1. Login
-2. Manage User Profile
-3. Create Chat Rooms
-4. View Nearby Chat Rooms
-5. Chat In Joined Chat Rooms
-6. send voice massages, play small games, share current location
-7. Search Chat Rooms by Tags
-
+## <font color="#0D2989"> ** Non Functional Properties ** </font>
+Circle handles unexpected input. Our app will detect invalid input and alert users.
+Circle is able to run on Android phones with version higher than 5.0.
+Circle is able to display reasonable amount of messages sent by users in a chat room within 500 ms under stable Internet connectivity.
+Circle does not contain user information so it will never reveal user privacy.
 
 ## <font color="#0D2989"> ** UML ** </font>
 
